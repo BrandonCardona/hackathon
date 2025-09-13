@@ -184,6 +184,15 @@ export default function App() {
   };
 
   useEffect(() => {
+    if (isConectaView) {
+      // Clean up map when switching to Conecta view
+      if (map) {
+        map.setTarget(undefined);
+        setMap(null);
+      }
+      return;
+    }
+
     // Para compatibilidad con window.ol en handleViewRoute
     window.ol = { geom: { LineString }, style: { Stroke } };
 
@@ -319,8 +328,12 @@ export default function App() {
 
     setMap(mapInstance);
 
-    return () => mapInstance.setTarget(undefined);
-  }, [locations]);
+    return () => {
+      if (mapInstance) {
+        mapInstance.setTarget(undefined);
+      }
+    };
+  }, [locations, isConectaView]); // Add isConectaView as dependency
 
   return (
     <div className="app">
@@ -330,53 +343,52 @@ export default function App() {
         isConectaView={isConectaView}
         setIsConectaView={setIsConectaView}
       />
-      <div className={`map-section ${isNavbarHidden ? "navbar-hidden" : ""}`}>
-        <Sidebar
-          locations={locations}
-          onLocationSelect={handleLocationSelect}
-        />
-        <div className="map-container">
-          <div ref={mapRef} className="map"></div>
-          <div
-            ref={popupRef}
-            className="popup"
-            style={{ display: "none" }}
-          ></div>
-        </div>
-        <MobileTabs
-          locations={locations}
-          onLocationSelect={handleLocationSelect}
-          onMapOpen={handleMobileMapOpen}
-        />
-        {/* Sidebar derecho para paquetes solo en vista principal */}
-        {!isConectaView && (
-          <RightSidebar packages={packages} onViewRoute={handleViewRoute} />
-        )}
-        {/* Botón para quitar rutas */}
-        {routeLayer && (
-          <button onClick={handleRemoveRoute} className="remove-route-btn">
-            Quitar Rutas
-          </button>
-        )}
-        {/* Detalle de la ruta seleccionada */}
-        {selectedRoute && (
-          <div className="route-details">
-            <h2>{selectedRoute.name}</h2>
-            <p>{selectedRoute.description}</p>
-            <h3>Puntos de la ruta:</h3>
-            <ul>
-              {selectedRoute.points.map((point, idx) => (
-                <li key={idx}>{point}</li>
-              ))}
-            </ul>
-            <p>
-              <strong>¿Por qué hacer esta ruta?</strong> {selectedRoute.agency}{" "}
-              ha diseñado esta experiencia para que disfrutes de{" "}
-              {selectedRoute.name}.
-            </p>
+      {!isConectaView ? (
+        <div className={`map-section ${isNavbarHidden ? "navbar-hidden" : ""}`}>
+          <Sidebar
+            locations={locations}
+            onLocationSelect={handleLocationSelect}
+          />
+          <div className="map-container">
+            <div ref={mapRef} className="map"></div>
+            <div
+              ref={popupRef}
+              className="popup"
+              style={{ display: "none" }}
+            ></div>
           </div>
-        )}
-      </div>
+          <MobileTabs
+            locations={locations}
+            onLocationSelect={handleLocationSelect}
+            onMapOpen={handleMobileMapOpen}
+          />
+          {!isConectaView && (
+            <RightSidebar packages={packages} onViewRoute={handleViewRoute} />
+          )}
+          {routeLayer && (
+            <button onClick={handleRemoveRoute} className="remove-route-btn">
+              Quitar Rutas
+            </button>
+          )}
+          {selectedRoute && (
+            <div className="route-details">
+              <h2>{selectedRoute.name}</h2>
+              <p>{selectedRoute.description}</p>
+              <h3>Puntos de la ruta:</h3>
+              <ul>
+                {selectedRoute.points.map((point, idx) => (
+                  <li key={idx}>{point}</li>
+                ))}
+              </ul>
+              <p>
+                <strong>¿Por qué hacer esta ruta?</strong> {selectedRoute.agency}{" "}
+                ha diseñado esta experiencia para que disfrutes de{" "}
+                {selectedRoute.name}.
+              </p>
+            </div>
+          )}
+        </div>
+      ) : null}
       <MobileMap
         isOpen={isMobileMapOpen}
         onClose={handleMobileMapClose}
@@ -387,3 +399,4 @@ export default function App() {
     </div>
   );
 }
+
