@@ -1,0 +1,177 @@
+/* Estilos para Sidebar izquierdo moderno */
+.sidebar {
+  background: linear-gradient(135deg, #e3f2fd 0%, #fff 100%);
+  box-shadow: 2px 0 16px rgba(25, 118, 210, 0.08);
+  padding: 32px 20px 24px 20px;
+  min-width: 270px;
+  height: 100vh;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  z-index: 150;
+}
+.sidebar h2 {
+  font-size: 1.4em;
+  color: #1976d2;
+  margin-bottom: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+.sidebar-item {
+  background: #f5faff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.07);
+  margin-bottom: 18px;
+  padding: 18px 16px 14px 16px;
+  transition: box-shadow 0.2s;
+  border: 1px solid #e3f2fd;
+  cursor: pointer;
+}
+.sidebar-item:hover {
+  box-shadow: 0 4px 16px rgba(25, 118, 210, 0.13);
+  border-color: #bbdefb;
+}
+.sidebar-title {
+  font-weight: 600;
+  font-size: 1.08em;
+  color: #1565c0;
+  margin-bottom: 6px;
+}
+.sidebar-description {
+  font-size: 0.97em;
+  margin-bottom: 6px;
+  color: #333;
+}
+.sidebar-visits {
+  font-size: 0.95em;
+  color: #1976d2;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 2rem 0 0 0;
+  margin-top: 0;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem 2rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.footer-section h3 {
+  font-size: 1.5rem;
+}
+
+.footer-section h4 {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.footer-section p {
+  margin: 0.5rem 0;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin: 0.5rem 0;
+}
+
+.footer-section ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  background-color: #222;
+  padding: 1rem 2rem;
+  text-align: center;
+  border-top: 1px solid #444;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 1.5rem 0 0 0;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem 1.5rem 1rem;
+  }
+
+  .footer-section h3 {
+    font-size: 1.3rem;
+  }
+
+  .footer-section h4 {
+    font-size: 1rem;
+  }
+
+  .footer-bottom {
+    padding: 0.75rem 1rem;
+  }
+
+  .footer-bottom p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 1rem 0 0 0;
+  }
+
+  .footer-content {
+    gap: 1rem;
+    padding: 0 0.75rem 1rem 0.75rem;
+  }
+
+  .footer-section h3 {
+    font-size: 1.2rem;
+  }
+
+  .footer-section h4 {
+    font-size: 0.95rem;
+  }
+
+  .footer-bottom {
+    padding: 0.5rem 0.75rem;
+  }
+}

@@ -1,0 +1,390 @@
+{
+  "locations": [
+    {
+      "name": "Restaurante Madre Monte Mirador",
+      "coordinates": [-75.2422, 4.4489],
+      "description": "Su ambiente es familiar y relajado, con espacios al aire libre que permiten disfrutar de vistas panorámicas de la naturaleza y de la ciudad. Ofrecen una carta variada que incluye platos tradicionales como bandeja paisa, tamales, desayunos estilo americano y ensaladas de frutas, acompañados de una decoración pintoresca que realza la experiencia.",
+      "visits": 45,
+      "category": "restaurant",
+      "Imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl5dnZ57jumLd9i3u21XtFb0BwtJsAXHzMtg&s"
+    },
+    {
+      "name": "ToliJazz",
+      "coordinates": [-75.2222, 4.4289],
+      "description": "Encuentro Universitario de Jazz y Latin que se realizará en Ibagué, en el Teatro Tolima (Cra. 3 #11-76). Este evento musical reúne talento local, nacional e internacional, con una programación que incluye conciertos, talleres formativos y presentaciones gratuitas, donde instrumentos como el saxofón, la trompeta y trombón son protagonistas.",
+      "visits": 90,
+      "Imagen": "https://res.cloudinary.com/dmn0vobpk/image/upload/v1756742471/companies/DIAZ301/events/WhatsAppImage2025-09-01at11.00.53AM.jpeg.jpg"
+    },
+    {
+      "name": "Museo de Arte del Tolima (MAT)",
+      "coordinates": [-75.24325, 4.45006],
+      "description": "Museo de arte en el barrio Belén (Cra. 7 #5-93) con colecciones de arte colombiano y latinoamericano.",
+      "visits": 30,
+      "Hora_Apertura": "10:00",
+      "Hora_Cierre": "18:00",
+      "Tags": "Site",
+      "Precio": "General $8.500 COP; estudiantes/niños $5.500 COP",
+      "Imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Museo%20de%20arte%20del%20tolima.JPG"
+    },
+    {
+      "name": "Jardín Botánico San Jorge",
+      "coordinates": [-75.21924, 4.45418],
+      "description": "Jardín botánico con senderos interpretativos y variedad de flora andina.",
+      "visits": 30,
+      "Hora_Apertura": "08:00",
+      "Hora_Cierre": "17:00",
+      "Tags": "Site",
+      "Precio": "Nacionales $20.000 COP; Extranjeros $30.000 COP (2025)",
+      "Imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Ibagu%C3%A9%20Panorama.jpg"
+    },
+    {
+      "name": "Parque Centenario",
+      "coordinates": [-75.242555353, 4.447440364],
+      "description": "Parque urbano emblemático en el centro de Ibagué, ideal para caminar y descansar bajo la sombra.",
+      "visits": 60,
+      "Hora_Apertura": "Sin horario",
+      "Hora_Cierre": "Sin horario",
+      "Tags": "Site",
+      "Precio": "Gratis",
+      "Imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Parque%20Centenario%20Ibagu%C3%A9.jpg"
+    },
+    {
+      "name": "Plaza de Bolívar (Ibagué)",
+      "coordinates": [-75.243744, 4.444539],
+      "description": "Plaza principal de la ciudad; alrededor están la Alcaldía, la Catedral y edificios históricos.",
+      "visits": 200,
+      "Hora_Apertura": "Sin horario",
+      "Hora_Cierre": "Sin horario",
+      "Tags": "Site",
+      "Precio": "Gratis",
+      "Imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Plaza%20de%20Bolivar%20Ibague.JPG"
+    },
+    {
+      "name": "Catedral Primada de Ibagué (Inmaculada Concepción)",
+      "coordinates": [-75.242265655, 4.444626005],
+      "description": "Catedral frente a la Plaza de Bolívar, conocida por sus vitrales.",
+      "visits": 200,
+      "Hora_Apertura": "Según eucaristías",
+      "Hora_Cierre": "Según eucaristías",
+      "Nota_Horario": "Lun–sáb: 7:00, 11:30, 17:00, 18:00; Dom: 7:30, 10:00, 12:00, 16:00, 17:30, 19:00",
+      "Tags": "Site",
+      "Precio": "Gratis",
+      "Imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Catedralibague.jpg"
+    },
+    {
+      "name": "Panóptico de Ibagué (Complejo Cultural)",
+      "coordinates": [-75.23997, 4.44817],
+      "description": "Antigua prisión de diseño panóptico (Calle 11 #9-73) restaurada como museo y complejo cultural.",
+      "visits": 150,
+      "Hora_Apertura": "14:00",
+      "Hora_Cierre": "17:00",
+      "Tags": "Site",
+      "Precio": "Gratis (apertura gradual)",
+      "Imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Pan%C3%B3ptico%20de%20Ibagu%C3%A9.JPG"
+    },
+    {
+      "name": "Parque de la Música",
+      "coordinates": [-75.244209303, 4.443154214],
+      "description": "Espacio público junto al Conservatorio del Tolima con esculturas y eventos musicales.",
+      "visits": 100,
+      "Hora_Apertura": "Sin horario",
+      "Hora_Cierre": "Sin horario",
+      "Tags": "Site",
+      "Precio": "Gratis",
+      "Imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Parque%20de%20la%20Musica.jpg"
+    },
+    {
+      "name": "Cañón del Combeima",
+      "coordinates": [-75.29, 4.53],
+      "description": "Ruta natural desde Ibagué hacia Juntas, con miradores, río y acceso a caminatas hacia el Nevado del Tolima.",
+      "visits": 90,
+      "Hora_Apertura": "Sin horario",
+      "Hora_Cierre": "Sin horario",
+      "Tags": "Site",
+      "Precio": "Gratis",
+      "Imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Ca%C3%B1%C3%B3n%20del%20r%C3%ADo%20Combeima%20Ibagu%C3%A9.jpg",
+
+      "category": "event"
+    },
+    {
+      "name": "Jardín Botánico",
+      "coordinates": [-75.2622, 4.4689],
+      "description": "Botanical garden with native and exotic plants",
+      "visits": 85,
+      "category": "place",
+      "Imagen": "https://media-cdn.tripadvisor.com/media/photo-m/1280/08/49/bd/eb/jardin-botanico-san-jorge.jpg"
+    },
+    {
+      "name": "L'italiano Restaurante Pizzeria Cafe",
+      "coordinates": [-75.1922, 4.3989],
+      "Tags": "Restaurante",
+      "description": "Authentic Italian pizza and pasta dishes",
+      "visits": 95,
+      "category": "restaurant",
+      "Imagen": "https://www.italiacaferistorante.es/images/c-local.jpg"
+    },
+    {
+      "name": "Conservatorio del Tolima",
+      "coordinates": [-75.24452, 4.44347],
+      "description": "Institución musical reconocida a nivel nacional, ubicada en el centro de Ibagué, que forma parte del patrimonio cultural de la ciudad.",
+      "visits": 120,
+      "Hora_Apertura": "08:00",
+      "Hora_Cierre": "18:00",
+      "Tags": "Cultura",
+      "Precio": "Gratis",
+      "Imagen": "https://upload.wikimedia.org/wikipedia/commons/1/17/Conservatorio_del_Tolima.jpg"
+    },
+    {
+      "name": "Centro Comercial Multicentro",
+      "coordinates": [-75.2252, 4.4436],
+      "description": "Centro comercial con tiendas de marcas nacionales e internacionales, restaurantes, cine y zonas de entretenimiento.",
+      "visits": 300,
+      "Hora_Apertura": "10:00",
+      "Hora_Cierre": "21:00",
+      "Tags": "Shopping",
+      "Precio": "Entrada gratis",
+      "Imagen": "https://www.ccmulticentro.com/wp-content/uploads/2022/02/multicentro_ibague.jpg"
+    },
+    {
+      "name": "Aqua Power Park",
+      "coordinates": [-75.1903, 4.4029],
+      "description": "Parque acuático en Ibagué con toboganes, piscinas y atracciones para toda la familia.",
+      "visits": 150,
+      "Hora_Apertura": "09:00",
+      "Hora_Cierre": "17:00",
+      "Tags": "Diversión",
+      "Precio": "Adultos $30.000 COP; Niños $20.000 COP",
+      "Imagen": "https://www.aquapowerpark.com/images/parque-ibague.jpg"
+    },
+    {
+      "name": "Mirador de Juntas",
+      "coordinates": [-75.2978, 4.5302],
+      "description": "Mirador natural en la zona rural de Ibagué que ofrece una vista espectacular del Cañón del Combeima y del Nevado del Tolima.",
+      "visits": 180,
+      "Hora_Apertura": "Sin horario",
+      "Hora_Cierre": "Sin horario",
+      "Tags": "Naturaleza",
+      "Precio": "Gratis",
+      "Imagen": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Juntas_Ibague.jpg"
+    },
+    {
+      "name": "Estadio Manuel Murillo Toro",
+      "coordinates": [-75.2333, 4.4372],
+      "description": "Estadio principal de Ibagué, sede del Deportes Tolima y de eventos deportivos y culturales de gran escala.",
+      "visits": 400,
+      "Hora_Apertura": "Según eventos",
+      "Hora_Cierre": "Según eventos",
+      "Tags": "Deporte",
+      "Precio": "Varía según evento",
+      "Imagen": "https://upload.wikimedia.org/wikipedia/commons/7/76/Estadio_Manuel_Murillo_Toro.jpg"
+    },
+    {
+      "name": "La Estación Centro Comercial",
+      "coordinates": [-75.2225, 4.4381],
+      "description": "Centro comercial moderno con tiendas, zona de comidas, cine y actividades familiares.",
+      "visits": 250,
+      "Hora_Apertura": "10:00",
+      "Hora_Cierre": "21:00",
+      "Tags": "Shopping",
+      "Precio": "Entrada gratis",
+      "Imagen": "https://upload.wikimedia.org/wikipedia/commons/8/84/Centro_comercial_La_Estaci%C3%B3n_Ibagu%C3%A9.jpg"
+    },
+    {
+      "name": "Nevado del Tolima",
+      "coordinates": [-75.3311, 4.6583],
+      "description": "Uno de los nevados más emblemáticos de Colombia, ubicado en el Parque Nacional Natural Los Nevados, con rutas de trekking desde Ibagué.",
+      "visits": 500,
+      "Hora_Apertura": "Sin horario fijo",
+      "Hora_Cierre": "Sin horario fijo",
+      "Tags": "Aventura",
+      "Precio": "Entrada al parque $20.000 COP",
+      "Imagen": "https://www2.sgc.gov.co/sgc/volcanes/VolcanNevadoTolima/PublishingImages/Paginas/default/74_NEVADO%20DEL%20TOLIMA%202012.JPG"
+    },
+    {
+      "name": "Restaurante Altavista",
+      "coordinates": [-75.2347, 4.4601],
+      "description": "Restaurante con vista panorámica de Ibagué, especializado en carnes a la parrilla y gastronomía local.",
+      "visits": 110,
+      "category": "restaurant",
+      "Tags": "Restaurante",
+      "Precio": "Platos desde $30.000 COP",
+      "Imagen": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/0a/1c/b3/altavista-ibague.jpg"
+    },
+    {
+      "name": "Universidad de Ibagué",
+      "coordinates": [-75.1928, 4.4265],
+      "description": "Institución de educación superior privada reconocida en la región, con programas de pregrado y posgrado, campus amplio y zonas verdes.",
+      "visits": 250,
+      "Hora_Apertura": "07:00",
+      "Hora_Cierre": "21:00",
+      "Tags": "Educación",
+      "Precio": "No aplica",
+      "Imagen": "https://www.unibague.edu.co/images/2021/04/30/campus.jpg"
+    },
+    {
+      "name": "Club Campestre de Ibagué",
+      "coordinates": [-75.1744, 4.4153],
+      "description": "Club social y deportivo con campo de golf, piscina, canchas de tenis y restaurante, ubicado en el sector suroriente de Ibagué.",
+      "visits": 180,
+      "Hora_Apertura": "06:00",
+      "Hora_Cierre": "22:00",
+      "Tags": "Deporte",
+      "Precio": "Membresía requerida",
+      "Imagen": "https://clubcampestreibague.com/wp-content/uploads/2022/03/clubcampestre_ibague.jpg"
+    },
+    {
+      "name": "Parque Deportivo de Ibagué",
+      "coordinates": [-75.1825, 4.4289],
+      "description": "Complejo deportivo con escenarios para atletismo, natación, tenis y fútbol, sede de eventos nacionales e internacionales.",
+      "visits": 350,
+      "Hora_Apertura": "06:00",
+      "Hora_Cierre": "22:00",
+      "Tags": "Deporte",
+      "Precio": "Gratis (entrada general)",
+      "Imagen": "https://www.ibague.gov.co/portal/secciones/noticias/imagenes/parquedeportivo.jpg"
+    },
+    {
+      "name": "Aeropuerto Perales",
+      "coordinates": [-75.1333, 4.4214],
+      "description": "Aeropuerto regional que conecta a Ibagué con Bogotá y otras ciudades principales de Colombia.",
+      "visits": 500,
+      "Hora_Apertura": "05:00",
+      "Hora_Cierre": "22:00",
+      "Tags": "Transporte",
+      "Precio": "Según aerolínea",
+      "Imagen": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Aeropuerto_Perales.jpg"
+    },
+    {
+      "name": "Centro Comercial Acqua Power Center",
+      "coordinates": [-75.1827, 4.4315],
+      "description": "Centro comercial moderno con tiendas, zona de comidas, oficinas y entretenimiento familiar.",
+      "visits": 220,
+      "Hora_Apertura": "10:00",
+      "Hora_Cierre": "21:00",
+      "Tags": "Shopping",
+      "Precio": "Entrada gratis",
+      "Imagen": "https://www.ccacqua.com/images/ibague.jpg"
+    },
+    {
+      "name": "Vereda Buenos Aires",
+      "coordinates": [-75.1565, 4.395],
+      "description": "Zona rural de Ibagué con paisajes verdes, senderos y producción agrícola tradicional.",
+      "visits": 70,
+      "Hora_Apertura": "Sin horario",
+      "Hora_Cierre": "Sin horario",
+      "Tags": "Naturaleza",
+      "Precio": "Gratis",
+      "Imagen": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Campo_colombiano.jpg"
+    },
+    {
+      "name": "Nevado del Ruiz (acceso desde Murillo, Tolima)",
+      "coordinates": [-75.3222, 4.8922],
+      "description": "Parte del Parque Nacional Natural Los Nevados, el Nevado del Ruiz es uno de los volcanes más imponentes de Colombia, visitado desde Murillo, Tolima.",
+      "visits": 600,
+      "Hora_Apertura": "06:00",
+      "Hora_Cierre": "17:00",
+      "Tags": "Naturaleza",
+      "Precio": "Entrada al parque $20.000 COP",
+      "Imagen": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Nevado_del_Ruiz.jpg"
+    },
+    {
+      "name": "Termales de Murillo",
+      "coordinates": [-75.17, 4.87],
+      "description": "Piscinas naturales de agua termal en el municipio de Murillo, rodeadas de montañas y paisajes de páramo.",
+      "visits": 250,
+      "Hora_Apertura": "07:00",
+      "Hora_Cierre": "18:00",
+      "Tags": "Naturaleza",
+      "Precio": "$15.000 COP",
+      "Imagen": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/4b/f6/47/termales-en-murillo.jpg?w=700&h=500"
+    },
+    {
+      "name": "Parque Nacional Natural Nevado del Huila",
+      "coordinates": [-75.4189, 2.9333],
+      "description": "Área protegida que comparte Tolima, Cauca y Huila, con ecosistemas de páramo, lagunas y senderos de alta montaña.",
+      "visits": 500,
+      "Hora_Apertura": "06:00",
+      "Hora_Cierre": "16:00",
+      "Tags": "Naturaleza",
+      "Precio": "Entrada $20.000 COP",
+      "Imagen": "https://upload.wikimedia.org/wikipedia/commons/6/65/Nevado_del_Huila.jpg"
+    },
+    {
+      "name": "Represa de Prado",
+      "coordinates": [-74.95, 3.75],
+      "description": "Conocida como el 'Mar Interior de Colombia', ideal para deportes náuticos, pesca y ecoturismo.",
+      "visits": 450,
+      "Hora_Apertura": "07:00",
+      "Hora_Cierre": "18:00",
+      "Tags": "Turismo",
+      "Precio": "Varía según actividad",
+      "Imagen": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Represa_de_Prado_Tolima.jpg"
+    },
+    {
+      "name": "Cascada La Chorrera de Payandé",
+      "coordinates": [-75.15, 4.23],
+      "description": "Imponente cascada ubicada en el corregimiento de Payandé (San Luis), rodeada de bosque y formaciones rocosas.",
+      "visits": 200,
+      "Hora_Apertura": "07:00",
+      "Hora_Cierre": "17:00",
+      "Tags": "Naturaleza",
+      "Precio": "$10.000 COP",
+      "Imagen": "https://upload.wikimedia.org/wikipedia/commons/6/63/Chorrera_de_Payande.jpg"
+    },
+    {
+      "name": "Parque Nacional Natural Las Hermosas",
+      "coordinates": [-75.58, 3.58],
+      "description": "Área protegida compartida entre Tolima y Valle del Cauca, con páramos, lagunas y alta biodiversidad.",
+      "visits": 300,
+      "Hora_Apertura": "06:00",
+      "Hora_Cierre": "16:00",
+      "Tags": "Naturaleza",
+      "Precio": "Entrada $20.000 COP",
+      "Imagen": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Paramo_las_hermosas.jpg"
+    },
+    {
+      "name": "Mariquita",
+      "coordinates": [-74.9, 5.2],
+      "description": "Municipio histórico conocido como la 'Ciudad de las Palmas', con arquitectura colonial y el Museo Casa de la Moneda.",
+      "visits": 350,
+      "Hora_Apertura": "Todo el día",
+      "Hora_Cierre": "Todo el día",
+      "Tags": "Cultura",
+      "Precio": "Gratis",
+      "Imagen": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Mariquita_Tolima.jpg"
+    },
+    {
+      "name": "Honda",
+      "coordinates": [-74.7333, 5.2],
+      "description": "Municipio histórico a orillas del río Magdalena, famoso por sus puentes coloniales y arquitectura.",
+      "visits": 400,
+      "Hora_Apertura": "Todo el día",
+      "Hora_Cierre": "Todo el día",
+      "Tags": "Cultura",
+      "Precio": "Gratis",
+      "Imagen": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Honda_Tolima.jpg"
+    },
+    {
+      "name": "Ambalema",
+      "coordinates": [-74.7667, 4.7833],
+      "description": "Pueblo patrimonial del Tolima, reconocido por su arquitectura colonial y su importancia en la época del tabaco.",
+      "visits": 300,
+      "Hora_Apertura": "Todo el día",
+      "Hora_Cierre": "Todo el día",
+      "Tags": "Cultura",
+      "Precio": "Gratis",
+      "Imagen": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Ambalema_tolima.jpg"
+    },
+    {
+      "name": "Cañón de Anchique",
+      "coordinates": [-75.116, 3.833],
+      "description": "Formación natural en el municipio de Villarrica, con caídas de agua, pozos naturales y senderismo.",
+      "visits": 150,
+      "Hora_Apertura": "07:00",
+      "Hora_Cierre": "16:00",
+      "Tags": "Naturaleza",
+      "Precio": "$8.000 COP",
+      "Imagen": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Ca%C3%B1on_Anchique.jpg"
+    }
+  ]
+}

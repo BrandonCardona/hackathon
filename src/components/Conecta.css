@@ -1,0 +1,258 @@
+.conecta-comment .conecta-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+  vertical-align: middle;
+  margin-right: 6px;
+  border: 1px solid #90caf9;
+}
+/* Contenedor principal */
+.conecta-container {
+  background: #f5faff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(25, 118, 210, 0.09);
+  padding: 32px 24px;
+  max-width: 600px;
+  margin: 32px auto;
+}
+.conecta-title {
+  color: #1976d2;
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.conecta-new-post {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 28px;
+  background: #e3f2fd;
+  border-radius: 12px;
+  padding: 18px 16px;
+}
+.conecta-new-avatar img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #1976d2;
+}
+.conecta-new-fields {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.conecta-textarea {
+  border-radius: 8px;
+  border: 1px solid #bbdefb;
+  padding: 10px;
+  font-size: 1em;
+  resize: vertical;
+  min-height: 48px;
+}
+.conecta-input {
+  border-radius: 8px;
+  border: 1px solid #bbdefb;
+  padding: 8px;
+  font-size: 1em;
+}
+.conecta-btn {
+  background: linear-gradient(90deg, #1976d2 60%, #64b5f6 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 8px 18px;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.09);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.conecta-btn:hover {
+  background: #1565c0;
+}
+.conecta-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.conecta-post {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.07);
+  padding: 18px 16px;
+  border: 1px solid #e3f2fd;
+  transition: box-shadow 0.2s;
+}
+.conecta-post:hover {
+  box-shadow: 0 4px 16px rgba(25, 118, 210, 0.13);
+}
+.conecta-post-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+.conecta-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #90caf9;
+}
+.conecta-user {
+  font-weight: 600;
+  color: #1976d2;
+  font-size: 1.1em;
+}
+.conecta-message {
+  font-size: 1.08em;
+  margin-bottom: 8px;
+  color: #333;
+}
+.conecta-img {
+  width: 100%;
+  max-width: 340px;
+  border-radius: 10px;
+  margin-top: 8px;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.09);
+}
+.conecta-post-actions {
+  margin-top: 8px;
+}
+.conecta-like-btn {
+  background: #fff;
+  color: #1976d2;
+  border: 1px solid #bbdefb;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 6px 14px;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(25, 118, 210, 0.07);
+  transition: background 0.2s, color 0.2s;
+}
+.conecta-like-btn:hover {
+  background: #1976d2;
+  color: #fff;
+}
+.conecta-comments {
+  margin-top: 12px;
+  background: #e3f2fd;
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+.conecta-comment {
+  margin-bottom: 6px;
+  font-size: 0.98em;
+}
+.conecta-comment-user {
+  font-weight: 600;
+  color: #1976d2;
+}
+.conecta-comment-input {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+.conecta-comment-input input {
+  flex: 1;
+  border-radius: 8px;
+  border: 1px solid #bbdefb;
+  padding: 6px;
+  font-size: 1em;
+}
+.conecta-comment-input button {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.conecta-comment-input button:hover {
+  background: #1565c0;
+  font-weight: 600;
+  color: #1565c0;
+  margin-bottom: 6px;
+}
+.conecta-user {
+  font-weight: 700;
+  color: #1976d2;
+}
+.conecta-post-body p {
+  margin: 0 0 8px 0;
+  font-size: 1.08em;
+}
+.conecta-img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  margin-top: 8px;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.09);
+}
+.conecta-post-actions {
+  margin-top: 10px;
+}
+.conecta-post-actions button {
+  background: #fff;
+  color: #1976d2;
+  border: 1px solid #bbdefb;
+  border-radius: 6px;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.conecta-post-actions button:hover {
+  background: #bbdefb;
+  color: #1565c0;
+}
+.conecta-comments {
+  margin-top: 14px;
+}
+.conecta-comment {
+  background: #f5faff;
+  border-radius: 6px;
+  padding: 6px 10px;
+  margin-bottom: 6px;
+  font-size: 0.98em;
+}
+.conecta-comment-user {
+  font-weight: 600;
+  color: #1976d2;
+}
+.conecta-comment-input {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+.conecta-comment-input input {
+  flex: 1;
+  border-radius: 6px;
+  border: 1px solid #bbdefb;
+  padding: 6px 10px;
+  font-size: 1em;
+}
+.conecta-comment-input button {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.conecta-comment-input button:hover {
+  background: #1565c0;
+}

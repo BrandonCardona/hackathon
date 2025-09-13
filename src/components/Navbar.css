@@ -1,0 +1,134 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #e0e0e0;
+  z-index: 1001;
+  position: fixed;
+  top: 15px;
+  left: 0;
+  right: 0;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0);
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.navbar.hidden {
+  transform: translateY(-100%);
+}
+
+.navbar-brand h1 {
+  margin: 0;
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Navbar moderno y estético */
+.navbar {
+  background: linear-gradient(90deg, #1976d2 60%, #64b5f6 100%);
+  color: #fff;
+  padding: 18px 40px 18px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 12px rgba(25, 118, 210, 0.13);
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  min-height: 64px;
+}
+.navbar-title {
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-shadow: 0 2px 8px rgba(25, 118, 210, 0.13);
+}
+.navbar-actions {
+  display: flex;
+  gap: 18px;
+}
+.navbar-actions button {
+  background: #fff;
+  color: #1976d2;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 8px 18px;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.09);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.navbar-actions button:hover {
+  background: #bbdefb;
+  color: #1565c0;
+}
+.navbar-link:hover {
+  color: #333;
+}
+
+.map-link {
+  background: #007bff;
+  color: white !important;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.map-link:hover {
+  background: #0056b3;
+  color: white !important;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.75rem 1rem;
+    top: 15px;
+  }
+
+  .navbar-menu {
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .navbar-brand h1 {
+    font-size: 1.1rem;
+  }
+
+  .navbar-link {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.5rem 0.75rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    top: 15px;
+  }
+
+  .navbar-brand h1 {
+    font-size: 1rem;
+  }
+
+  .navbar-menu {
+    gap: 0.5rem;
+    justify-content: center;
+  }
+
+  .navbar-link {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.6rem;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+}
