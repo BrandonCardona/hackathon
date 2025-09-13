@@ -33,6 +33,8 @@ export default function App() {
   const [routeLayer, setRouteLayer] = useState(null);
   const [selectedRoute, setSelectedRoute] = useState(null); // Estado para la ruta seleccionada
   const [isConectaView, setIsConectaView] = useState(false);
+  const [showPoints, setShowPoints] = useState(true); // Add this state
+  const [showHeatmap, setShowHeatmap] = useState(true);
 
   // Ejemplo de paquetes turísticos
   const [packages] = useState([
@@ -183,6 +185,30 @@ export default function App() {
     setSelectedRoute(null); // Limpiar la ruta seleccionada
   };
 
+  // Add this function to handle toggle
+  const handleTogglePoints = useCallback(() => {
+    setShowPoints((prev) => !prev);
+    if (map) {
+      // Only toggle vector and heatmap layers, not the base map
+      map.getLayers().forEach((layer) => {
+        if (layer instanceof VectorLayer && !(layer instanceof Heatmap)) {
+          layer.setVisible(!showPoints);
+        }
+      });
+    }
+  }, [map, showPoints]);
+
+  const handleToggleHeatmap = useCallback(() => {
+    setShowHeatmap((prev) => !prev);
+    if (map) {
+      map.getLayers().forEach((layer) => {
+        if (layer instanceof Heatmap) {
+          layer.setVisible(!showHeatmap);
+        }
+      });
+    }
+  }, [map, showHeatmap]);
+
   useEffect(() => {
     if (isConectaView) {
       // Clean up map when switching to Conecta view
@@ -236,9 +262,9 @@ export default function App() {
           scale: 0.5,
         }),
       }),
+      visible: showPoints, // Add this line
     });
 
-    // Create heatmap layer
     const heatmapLayer = new Heatmap({
       source: new VectorSource({
         features: heatmapFeatures,
@@ -248,6 +274,7 @@ export default function App() {
       weight: function (feature) {
         return feature.get("weight");
       },
+      visible: showPoints, // Add this line
     });
 
     // Create popup overlay
@@ -262,13 +289,26 @@ export default function App() {
       target: mapRef.current,
       pixelRatio: 1,
       layers: [
+        // Base map layer (always visible)
         new TileLayer({
           source: new XYZ({
             url: "https://{a-c}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}.png",
           }),
           renderMode: "image",
+          visible: true, // Always visible
         }),
-        heatmapLayer, // Add heatmap layer before vector layer for proper overlay
+        // Points and heatmap layers (toggleable)
+        new Heatmap({
+          source: new VectorSource({
+            features: heatmapFeatures,
+          }),
+          blur: 15,
+          radius: 10,
+          weight: function (feature) {
+            return feature.get("weight");
+          },
+          visible: showPoints,
+        }),
         vectorLayer,
       ],
       overlays: [popup],
@@ -333,7 +373,7 @@ export default function App() {
         mapInstance.setTarget(undefined);
       }
     };
-  }, [locations, isConectaView]); // Add isConectaView as dependency
+  }, [locations, isConectaView, showPoints]); // Add showPoints dependency
 
   return (
     <div className="app">
@@ -345,6 +385,52 @@ export default function App() {
       />
       {!isConectaView ? (
         <div className={`map-section ${isNavbarHidden ? "navbar-hidden" : ""}`}>
+          {/* Add toggle switch */}
+          <div
+            className="map-controls"
+            style={{
+              position: "absolute",
+              top: "10px",
+              right: "10px",
+              zIndex: 1000,
+              background: "white",
+              padding: "5px",
+              borderRadius: "4px",
+              boxShadow: "0 2px 4px rgba(0,0,0,0.2)",
+              display: "flex",
+              flexDirection: "column",
+              gap: "8px",
+            }}
+          >
+            <label
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "8px",
+              }}
+            >
+              <input
+                type="checkbox"
+                checked={showPoints}
+                onChange={handleTogglePoints}
+              />
+              Mostrar Puntos
+            </label>
+            <label
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "8px",
+              }}
+            >
+              <input
+                type="checkbox"
+                checked={showHeatmap}
+                onChange={handleToggleHeatmap}
+              />
+              Mostrar Mapa de Calor
+            </label>
+          </div>
           <Sidebar
             locations={locations}
             onLocationSelect={handleLocationSelect}
