@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from "react";
+import tolirideLogo from "../../TOLIRIDE.png";
 import "./Navbar.css";
 import Conecta from "./Conecta";
 
@@ -49,7 +50,11 @@ function Navbar({ onVisibilityChange, isConectaView, setIsConectaView }) {
           style={{ cursor: "pointer" }}
           onClick={() => setIsConectaView(false)}
         >
-          TOLIRIDE
+          <img
+            src={tolirideLogo}
+            alt="TOLIRIDE Logo"
+            style={{ height: 40, objectFit: "contain" }}
+          />
         </div>
         <div className="navbar-actions">
           <button
